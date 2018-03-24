@@ -1,8 +1,7 @@
 <template>
-  <div class="feature white-background margin-auto pd-box border-radius box-size shadow">
-    <img class="icon" src="../assets/logo.png"/>
-    <h3 class="bold"> {{item.title}}</h3>
-    <p class="text center small"> {{item.message}}</p>
+  <div class="textbox white">
+    <h2 class="bold left"> {{item.title}}</h2>
+    <p class="text left small"> {{item.message}}</p>
   </div>
 </template>
 
@@ -21,5 +20,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.icon { width: 100px}
+.textbox { max-width: 500px;}
 </style>

@@ -1,5 +1,5 @@
 <template>
-<input class="border-radius sky small pd-10 margin-auto white" type="submit" name="submit" value="Get your free trial">
+<input class="border-radius sky small pd-10 margin-auto white shadow bold pd-button" type="submit" name="submit" value="Get your free trial">
 </template>
 
 <script>
