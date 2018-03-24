@@ -14,12 +14,6 @@ export default {
   components: {
     Submit
   },
-  data () {
-    return {
-      title: "Security",
-      message: "Ensure that all data stays within the organization"
-    }
-  },
   props: ['item']
 }
 </script>

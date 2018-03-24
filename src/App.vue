@@ -8,13 +8,13 @@
         <Feature :item="{title: 'Secure', message: 'Ensure that all data stays within the organization'}"/>
       </div>
       <div class="container column">
-        <div class="container row content-space align-center space">
+        <div class="container row content-space space">
           <Textbox class="flex-half" :item="{title: 'Mentimeter for business features', message: '­Mentimeter is an easy­to­use presentation software used by more than 8 million people. With Mentimeter you can create fun and interactive presentations. We help you make your events, presentations, lectures, and workshops innovative and memorable. Perfect for businesses that want to grow and take care of their employees.', msg: 'Learn more about features'}"/>
           <div class="flex-half">
             <img src="./assets/logo.png"/>
           </div>
         </div>
-        <div class="container row content-space align-center space">
+        <div class="container row content-space space">
           <div class="flex-half">
             <img src="./assets/MichaelScott.png"/>
           </div>
@@ -53,7 +53,6 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 

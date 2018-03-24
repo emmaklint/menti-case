@@ -1,8 +1,8 @@
 <template>
-  <div class="grow feature white-background margin-auto pd-box border-radius box-size shadow">
-    <img class="icon" src="../assets/security.png"/>
-    <h3 class="bold"> {{item.title}}</h3>
-    <p class="text center small"> {{item.message}}</p>
+  <div class="container column align-center grow feature white-background margin-auto pd-box border-radius box-size shadow">
+    <img class="icon center" src="../assets/security.png"/>
+    <h3 class="bold center"> {{item.title}}</h3>
+    <p class="text center small m-0"> {{item.message}}</p>
   </div>
 </template>
 
@@ -21,5 +21,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.icon { width: 100px}
+.icon { width: 80px}
 </style>
