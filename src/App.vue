@@ -109,4 +109,7 @@ body {
 
 .logo {width:400px;}
 
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
 </style>

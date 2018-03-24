@@ -1,7 +1,7 @@
 <template>
 <div>
   <div>
-  <input class="border-radius no-border sky small white poppins shadow bold pd-button" type="submit" name="submit" :value="msg.msg">
+  <input class="grow border-radius no-border sky small white poppins shadow bold pd-button" type="submit" name="submit" :value="msg.msg">
   </div>
 </div>
 </template>
