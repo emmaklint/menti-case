@@ -1,6 +1,6 @@
 <template>
   <div class="feature white-background margin-auto pd-box border-radius box-size shadow">
-    <img class="icon" src="../assets/logo.png"/>
+    <img class="icon" src="../assets/security.png"/>
     <h3 class="bold"> {{item.title}}</h3>
     <p class="text center small"> {{item.message}}</p>
   </div>

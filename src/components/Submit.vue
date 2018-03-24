@@ -1,20 +1,23 @@
 <template>
-<input class="border-radius sky small pd-10 margin-auto white shadow bold pd-button" type="submit" name="submit" value="Get your free trial">
+<div>
+  <div>
+  <input class="border-radius no-border sky small white poppins shadow bold pd-button" type="submit" name="submit" :value="msg.msg">
+  </div>
+</div>
 </template>
 
 <script>
 export default {
   name: 'Intro',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  props: ['msg']
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.button {
+  display: inline;
+}
 
 </style>

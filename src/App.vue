@@ -9,12 +9,16 @@
       </div>
       <div class="container column">
         <div class="container row content-space align-center space">
-          <Textbox :item="{title: 'Mentimeter for business features', message: '­Mentimeter is an easy­to­use presentation software used by more than 8 million people. With Mentimeter you can create fun and interactive presentations. We help you make your events, presentations, lectures, and workshops innovative and memorable. Perfect for businesses that want to grow and take care of their employees.'}"/>
-          <img src="./assets/logo.png"/>
+          <Textbox class="flex-half" :item="{title: 'Mentimeter for business features', message: '­Mentimeter is an easy­to­use presentation software used by more than 8 million people. With Mentimeter you can create fun and interactive presentations. We help you make your events, presentations, lectures, and workshops innovative and memorable. Perfect for businesses that want to grow and take care of their employees.', msg: 'Learn more about features'}"/>
+          <div class="flex-half">
+            <img src="./assets/logo.png"/>
+          </div>
         </div>
         <div class="container row content-space align-center space">
-          <img src="./assets/MichaelScott.png"/>
-          <Textbox :item="{title: 'Customers grow with Mentimeter', message: 'Praxent helps customers grow through custom software and have used Mentimeter to help them grow their business. Director of Operations, Chris Walker gave us an insight into how Mentimeter has helped Praxent, his thoughts have been reflected in this blog post.'}"/>
+          <div class="flex-half">
+            <img src="./assets/MichaelScott.png"/>
+          </div>
+          <Textbox class="flex-half" :item="{title: 'Customers grow with Mentimeter', message: 'Praxent helps customers grow through custom software and have used Mentimeter to help them grow their business. Director of Operations, Chris Walker gave us an insight into how Mentimeter has helped Praxent, his thoughts have been reflected in this blog post.', msg: 'Read the full story'}"/>
         </div>
       </div>
     </div>
@@ -59,22 +63,31 @@ body {
 .white {color: white}
 .white-background { background-color: white}
 .sky {background-color: #009fb8}
+.poppins {font-family: 'Poppins'; font-weight: 600}
 
 .left { text-align: left }
 .center { text-align: center }
 
 .margin-auto { margin: auto;}
-.m-0 { padding: 0 }
+.m-0 { margin: 0 }
+.m-2 { margin: 2% }
 .m-10 { margin: 10% }
 .space {margin-top: 10%; margin-bottom: 10%}
+.space-horisontal {margin: 0 5%}
 
 .pd-0 { padding: 0 }
+.pd-5 { padding-left: 5%; padding-right: 5%}
 .pd-10 { padding-left: 10%; padding-right: 10%}
 .pd-20 { padding-left: 20%; padding-right: 20%}
 .pd-30 { padding-left: 30%; padding-right: 30%}
 
+.auto-width {  object-fit: cover;}
 
-.pd-button { padding: 10px;}
+.no-border { border: 0 }
+
+.pd-button { padding: 10px 25px}
+.space-button {margin-top: 3%; margin-bottom: 3%}
+
 
 .pd-box {padding: 2%}
 .box-size {max-width: 300px; min-height: 200px;}
@@ -90,5 +103,10 @@ body {
 .content-center { justify-content: center }
 .content-space { justify-content: space-around }
 .align-center { align-items: center}
+
+.flex-half {flex: 1 1 0}
+.flex-grow { flex-grow: 2 }
+
+.logo {width:400px;}
 
 </style>
