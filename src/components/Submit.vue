@@ -1,7 +1,7 @@
 <template>
 <div>
   <div>
-  <input class="grow border-radius no-border sky small white poppins shadow bold pd-button" type="submit" name="submit" :value="msg.msg">
+  <button class="grow button border-radius no-border sky small white poppins shadow bold pd-button" type="submit" name="submit" :value="msg.msg">{{msg.msg}}</button>
   </div>
 </div>
 </template>
@@ -17,7 +17,8 @@ export default {
 <style scoped>
 
 .button {
-  display: inline;
+  min-width: 250px;
+  align-self: flex-start;
 }
 
 </style>

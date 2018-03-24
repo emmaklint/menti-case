@@ -70,10 +70,10 @@ body {
 
 .margin-auto { margin: auto;}
 .m-0 { margin: 0 }
-.m-2 { margin: 2% }
+.m-2 { margin: 2% 0}
 .m-10 { margin: 10% }
-.space {margin-top: 10%; margin-bottom: 10%}
-.space-horisontal {margin: 0 5%}
+.space {margin: 5% 0}
+.space-horisontal {margin: 0 2%}
 
 .pd-0 { padding: 0 }
 .pd-5 { padding-left: 5%; padding-right: 5%}
@@ -104,12 +104,14 @@ body {
 .content-space { justify-content: space-around }
 .align-center { align-items: center}
 
-.flex-half {flex: 1 1 0}
-.flex-grow { flex-grow: 2 }
+.flex-half {max-width: 500px;}
+.flex-grow-1 { flex-grow: 1 }
+.flex-grow-2 { flex-grow: 2 }
+
 
 .logo {width:400px;}
 
 .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+.grow:hover { transform: scale(1.05); }
 
 </style>
