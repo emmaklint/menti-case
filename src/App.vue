@@ -9,15 +9,15 @@
       </div>
       <div class="container column">
         <div class="container row wrap content-center space">
-          <Textbox class="flex-half space-horisontal-10" :item="{title: 'Mentimeter for business features', message: '­Mentimeter is an easy­to­use presentation software used by more than 8 million people. With Mentimeter you can create fun and interactive presentations. We help you make your events, presentations, lectures, and workshops innovative and memorable. Perfect for businesses that want to grow and take care of their employees.', msg: 'Learn more about features'}"/>
+          <Textbox class="flex-half space-horisontal-10" :item="{title: 'Mentimeter for business features', message: '­Mentimeter is an easy­-to­-use presentation software used by more than 8 million people. With Mentimeter you can create fun and interactive presentations. We help you make your events, presentations, lectures, and workshops innovative and memorable. Perfect for businesses that want to grow and take care of their employees.', msg: 'Learn more about features'}"/>
           <div class="flex-half space-horisontal-10">
-            <img src="./assets/presentation.png"/>
+            <img class="art" src="./assets/presentation.png"/>
           </div>
         </div>
         <div class="container row wrap-reverse content-center align-center space">
           <div class="flex-half container align-center content-center space space-horisontal-10">
             <div>
-              <img src="./assets/bubble.png"/>
+              <img class="art" src="./assets/bubble.png"/>
               </div>
           </div>
           <Textbox class="flex-half space-horisontal-10" :item="{title: 'Customers grow with Mentimeter', message: 'Praxent helps customers grow through custom software and have used Mentimeter to help them grow their business. Director of Operations, Chris Walker gave us an insight into how Mentimeter has helped Praxent, his thoughts have been reflected in this blog post.', msg: 'Read the full story'}"/>
@@ -134,5 +134,5 @@ body {
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.05); }
 
-.round { border-radius: 50%;}
+.art {max-width: 400px;}
 </style>
