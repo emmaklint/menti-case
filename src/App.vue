@@ -17,7 +17,7 @@
         <div class="container row wrap-reverse content-center align-center space">
           <div class="flex-half container align-center content-center space space-horisontal-10">
             <div>
-              <img class="round" src="./assets/man.jpg"/>
+              <img src="./assets/bubble.png"/>
               </div>
           </div>
           <Textbox class="flex-half space-horisontal-10" :item="{title: 'Customers grow with Mentimeter', message: 'Praxent helps customers grow through custom software and have used Mentimeter to help them grow their business. Director of Operations, Chris Walker gave us an insight into how Mentimeter has helped Praxent, his thoughts have been reflected in this blog post.', msg: 'Read the full story'}"/>
