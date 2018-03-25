@@ -3,22 +3,24 @@
     <Intro/>
     <div class="container column content-space">
       <div class="container row wrap align-center content-center margin-auto space">
-        <Feature :item="{title: 'Easy administration', message: '­ Central administration and billing with one invoice.', icon: 'paper'}"/>
+        <Feature id="one" :item="{title: 'Easy administration', message: '­ Central administration and billing with one invoice.', icon: 'paper'}"/>
         <Feature :item="{title: 'Increase collaboration', message: 'Share your presentations and create knowledge hub', icon: 'collaboration'}"/>
         <Feature :item="{title: 'Secure', message: 'Ensure that all data stays within the organization', icon: 'lock'}"/>
       </div>
       <div class="container column">
-        <div class="container row wrap content-space space">
-          <Textbox class="flex-half" :item="{title: 'Mentimeter for business features', message: '­Mentimeter is an easy­to­use presentation software used by more than 8 million people. With Mentimeter you can create fun and interactive presentations. We help you make your events, presentations, lectures, and workshops innovative and memorable. Perfect for businesses that want to grow and take care of their employees.', msg: 'Learn more about features'}"/>
-          <div class="flex-half">
-            <img src="./assets/logo.png"/>
+        <div class="container row wrap content-center space">
+          <Textbox class="flex-half space-horisontal-10" :item="{title: 'Mentimeter for business features', message: '­Mentimeter is an easy­to­use presentation software used by more than 8 million people. With Mentimeter you can create fun and interactive presentations. We help you make your events, presentations, lectures, and workshops innovative and memorable. Perfect for businesses that want to grow and take care of their employees.', msg: 'Learn more about features'}"/>
+          <div class="flex-half space-horisontal-10">
+            <img src="./assets/presentation.png"/>
           </div>
         </div>
-        <div class="container row wrap-reverse content-space space">
-          <div class="flex-half">
-            <img src="./assets/MichaelScott.png"/>
+        <div class="container row wrap-reverse content-center align-center space">
+          <div class="flex-half container align-center content-center space space-horisontal-10">
+            <div>
+              <img class="round" src="./assets/man.jpg"/>
+              </div>
           </div>
-          <Textbox class="flex-half" :item="{title: 'Customers grow with Mentimeter', message: 'Praxent helps customers grow through custom software and have used Mentimeter to help them grow their business. Director of Operations, Chris Walker gave us an insight into how Mentimeter has helped Praxent, his thoughts have been reflected in this blog post.', msg: 'Read the full story'}"/>
+          <Textbox class="flex-half space-horisontal-10" :item="{title: 'Customers grow with Mentimeter', message: 'Praxent helps customers grow through custom software and have used Mentimeter to help them grow their business. Director of Operations, Chris Walker gave us an insight into how Mentimeter has helped Praxent, his thoughts have been reflected in this blog post.', msg: 'Read the full story'}"/>
         </div>
       </div>
     </div>
@@ -38,6 +40,23 @@ export default {
     Feature,
     Submit,
     Textbox
+  },
+  data () {
+    return {
+      scrolled: false
+    }
+  },
+  methods: {
+    handleScroll () {
+      console.log('1')
+      this.scrolled = window.scrollY > 0;
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
@@ -61,7 +80,7 @@ body {
 .small {font-size: 1.2em}
 .bold { font-weight: 600}
 .white {color: white}
-.white-background { background-color: white}
+.light-background { background-color: #ECECEC}
 .sky {background-color: #009fb8}
 .poppins {font-family: 'Poppins'; font-weight: 600}
 
@@ -74,6 +93,8 @@ body {
 .m-10 { margin: 10% }
 .space {margin: 5% 0}
 .space-horisontal {margin: 0 2%}
+.space-horisontal-10 {margin: 0 10%}
+
 
 .pd-0 { padding: 0 }
 .pd-5 { padding-left: 5%; padding-right: 5%}
@@ -94,7 +115,7 @@ body {
 .border-radius { border-radius: 10px;}
 .shadow {box-shadow: 0 2px 4px 0 #162F37; }
 
-.container { display: flex; }
+.container { display: flex }
 .row { flex-direction: row }
 .column { flex-direction: column }
 
@@ -108,9 +129,10 @@ body {
 .wrap {flex-wrap: wrap}
 .wrap-reverse {flex-wrap: wrap-reverse}
 
-
 .logo {width:400px;}
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.05); }
+
+.round { border-radius: 50%;}
 </style>
