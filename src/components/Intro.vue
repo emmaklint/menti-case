@@ -6,7 +6,7 @@
       <h1 class="center bold white pd-25">Get your whole team presenting like superstars</h1>
       <p class="text center small white pd-25">Mentimeter is an easy­-to-­use tool that makes facilitators and presenters look like stars. No installations or downloads required ­- perfect for teams and organizations. For organizations of 2 or more users, Mentimeter for Teams gives you central control of licenses and knowledge shared within your organization.</p>
       <form class="container row form pd-10 m-2">
-        <input class="flex-grow-2 input pd-button shadow border-radius no-border small poppins flex-grow space-horisontal" type="email" name="email" placeholder="Enter your email here">
+        <input class="flex-grow-2 input pd-button shadow border-radius no-border small poppins flex-grow space-horisontal" type="email" name="email" placeholder="Enter your email">
         <Submit class="flex-grow-1 space-horisontal" :msg="{msg: 'Get your free trial'}"/>
       </form>
   </div>
@@ -19,11 +19,6 @@ export default {
   name: 'HelloWorld',
   components: {
     Submit
-  },
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
   }
 }
 </script>

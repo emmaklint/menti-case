@@ -95,7 +95,6 @@ body {
 .space-horisontal {margin: 0 2%}
 .space-horisontal-10 {margin: 0 10%}
 
-
 .pd-0 { padding: 0 }
 .pd-5 { padding-left: 5%; padding-right: 5%}
 .pd-10 { padding-left: 10%; padding-right: 10%}
